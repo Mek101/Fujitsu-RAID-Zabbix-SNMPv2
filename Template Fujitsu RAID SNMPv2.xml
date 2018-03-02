@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.4</version>
+    <date>2018-03-02T12:27:43Z</date>
+    <groups>
+        <group>
+            <name>Fujitsu Server</name>
+        </group>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template  Fujitsu Server RAID SNMPv2</template>
+            <name>Template  Fujitsu Server RAID SNMPv2</name>
+            <description>Template per il controller RAID Fujitsu tramite SNMPv2</description>
+            <groups>
+                <group>
+                    <name>Fujitsu Server</name>
+                </group>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Fujitsu RAID</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Fujitsu RAID Controller Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.231.2.49.1.6.2.1.10.1.1</snmp_oid>
+                    <key>FujitsuRAID1Stat</key>
+                    <delay>180</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fujitsu RAID</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Fujitsu RAID Controller Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Fujitsu Logical Drive 1 Name</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.231.2.49.1.6.2.1.11.1.1</snmp_oid>
+                    <key>FujitsuRAIDLogicalDrive1Name</key>
+                    <delay>30</delay>
+                    <history>90d</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Nome del Drive logico 1</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fujitsu RAID</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Fujitsu RAID Logical Drive 1 Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.231.2.49.1.6.2.1.19.1.1</snmp_oid>
+                    <key>FujitsuRAIDLogicalDrive1Stat</key>
+                    <delay>30</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fujitsu RAID</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Fujitsu RAID Controller Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Fujitsu Logical Drive 2 Name</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.231.2.49.1.6.2.1.11.1.2</snmp_oid>
+                    <key>FujitsuRAIDLogicalDrive2Name</key>
+                    <delay>30</delay>
+                    <history>90d</history>
+                    <trends>0</trends>
+                    <status>1</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description>Nome del drive logico 2</description>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fujitsu RAID</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Fujitsu RAID Logical Drive 2 Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.231.2.49.1.6.2.1.19.1.2</snmp_oid>
+                    <key>FujitsuRAIDLogicalDrive2Stat</key>
+                    <delay>30</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fujitsu RAID</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>Fujitsu RAID Controller Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Fujitsu RAID Logical Drives Number</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.231.2.49.1.6.1.0</snmp_oid>
+                    <key>FujitsuRAIDLogicalDriveNum</key>
+                    <delay>30</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fujitsu RAID</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>Fujitsu RAID Physical Drives Number</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>.1.3.6.1.4.1.231.2.49.1.5.1.0</snmp_oid>
+                    <key>FujitsuRAIDPhysicalDriveNum</key>
+                    <delay>30</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fujitsu RAID</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
+                </item>
+            </items>
+            <discovery_rules>
+                <discovery_rule>
+                    <name>Fujitsu RAID Logical Drives Discovery</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>discovery[{#DRIVESTATUS},.1.3.6.1.4.1.231.2.49.1.6.2.1.10, {#DRIVENAME}, .1.3.6.1.4.1.231.2.49.1.6.2.1.20]</snmp_oid>
+                    <key>FujitsuRAIDLogicalDrive.Discovery</key>
+                    <delay>3600s</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>30d</lifetime>
+                    <description>Estrae i valori Status e Nome dei drive di un RAID Fujitsu e crea un numero di item appropriato</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>Fujitsu RAID Logical Drives Status: {#DRIVENAME}</name>
+                            <type>4</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <snmp_oid>.1.3.6.1.4.1.231.2.49.1.6.2.1.10.{#SNMPINDEX}</snmp_oid>
+                            <key>FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}]</key>
+                            <delay>30s</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>Fujitsu Drive Status</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Fujitsu RAID</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>Fujitsu RAID Logical Drive Status</name>
+                            </valuemap>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <application_prototypes/>
+                            <master_item_prototype/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}].last(#1)}=3 or {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}].last(#1)}=4 or {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}].last(#1)}=9</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>{HOST.NAME} Fujitsu RAID Logical Drive {#DRIVENAME} Damaged</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}].last(#1)}=5 or {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}].last(#1)}=6 or {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}].last(#1)}=7 or {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryLogicalDrive.Stat.[{#SNMPINDEX}].last(#1)}=8</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>{HOST.NAME} Fujitsu RAID Logical Drive {#DRIVENAME} in Recovery or Modify</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>3</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                    <jmx_endpoint/>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>Fujitsu RAID Physical Drives Discovery</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <snmp_oid>discovery[{#DRIVESTATUS},.1.3.6.1.4.1.231.2.49.1.5.2.1.15, {#DRIVENAME}, .1.3.6.1.4.1.231.2.49.1.5.2.1.24, {#DRIVESMART}, .1.3.6.1.4.1.231.2.49.1.5.2.1.14]</snmp_oid>
+                    <key>FujitsuRAIDPhysicalDrive.Discovery</key>
+                    <delay>3600s</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>30d</lifetime>
+                    <description>Estrae i valori di SMART, Status e Noem dei drive di un RAID Fujitsu e crea un numero di item appropriato</description>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>Fujitsu RAID Physical Drives SMART: {#DRIVENAME}</name>
+                            <type>4</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <snmp_oid>.1.3.6.1.4.1.231.2.49.1.5.2.1.14.{#SNMPINDEX}</snmp_oid>
+                            <key>FujitsuRAIDDiscoveryPhysicalDrive.Smart.[{#SNMPINDEX}]</key>
+                            <delay>30m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>Fujitsu Drive SMART</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Fujitsu RAID</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>Fujitsu RAID Physical Drives SMART</name>
+                            </valuemap>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <application_prototypes/>
+                            <master_item_prototype/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Fujitsu RAID Physical Drives Status: {#DRIVENAME}</name>
+                            <type>4</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <snmp_oid>.1.3.6.1.4.1.231.2.49.1.5.2.1.15.{#SNMPINDEX}</snmp_oid>
+                            <key>FujitsuRAIDDiscoveryPhysicalDrive.Stat.[{#SNMPINDEX}]</key>
+                            <delay>30m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description>Fujitsu Drive Status</description>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>Fujitsu RAID</name>
+                                </application>
+                            </applications>
+                            <valuemap>
+                                <name>Fujitsu RAID Physical Drives Status</name>
+                            </valuemap>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <application_prototypes/>
+                            <master_item_prototype/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes>
+                        <trigger_prototype>
+                            <expression>{Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryPhysicalDrive.Smart.[{#SNMPINDEX}].last()}=2</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>{HOST.NAME} Fujitsu RAID Physical Drive {#DRIVENAME} SMART Failure Predicted</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryPhysicalDrive.Stat.[{#SNMPINDEX}].last(#1)}&lt;&gt;2 and {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryPhysicalDrive.Stat.[{#SNMPINDEX}].last(#1)}&lt;&gt;3 and {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryPhysicalDrive.Stat.[{#SNMPINDEX}].last(#1)}&lt;&gt;4 and {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryPhysicalDrive.Stat.[{#SNMPINDEX}].last(#1)}&lt;&gt;7 and {Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDDiscoveryPhysicalDrive.Stat.[{#SNMPINDEX}].last(#1)}&lt;&gt;8</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>{HOST.NAME} Fujitsu RAID Physical Drive {#DRIVENAME} Status Abnormal</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>4</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                    </trigger_prototypes>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                    <jmx_endpoint/>
+                </discovery_rule>
+            </discovery_rules>
+            <httptests/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template  Fujitsu Server RAID SNMPv2:FujitsuRAID1Stat.last(#1)}&lt;&gt;2</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>{HOST.NAME} Fujitsu RAID Controller Status Abnormal</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template  Fujitsu Server RAID SNMPv2:FujitsuRAIDLogicalDriveNum.abschange()}&lt;&gt;0</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>{HOST.NAME} Fujitsu RAID Logical Drives Changed</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+    </triggers>
+    <value_maps>
+        <value_map>
+            <name>Fujitsu RAID Controller Status</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Unknow</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>OK</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>Degradef</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>Offline</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>Rebuilding</newvalue>
+                </mapping>
+                <mapping>
+                    <value>6</value>
+                    <newvalue>Verify</newvalue>
+                </mapping>
+                <mapping>
+                    <value>7</value>
+                    <newvalue>Initializing</newvalue>
+                </mapping>
+                <mapping>
+                    <value>8</value>
+                    <newvalue>Morphing</newvalue>
+                </mapping>
+                <mapping>
+                    <value>9</value>
+                    <newvalue>Partially Degraded</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>Fujitsu RAID Logical Drive Status</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Unknow</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>OK</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>One disk in this array failed, redundancy lost</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>Too many disk in this array failed, drive no longer available</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>Rebuilding</newvalue>
+                </mapping>
+                <mapping>
+                    <value>6</value>
+                    <newvalue>Is executing a consistency check</newvalue>
+                </mapping>
+                <mapping>
+                    <value>7</value>
+                    <newvalue>Initialization</newvalue>
+                </mapping>
+                <mapping>
+                    <value>8</value>
+                    <newvalue>Is being modified (online array extension)</newvalue>
+                </mapping>
+                <mapping>
+                    <value>9</value>
+                    <newvalue>One disk in this array failed, reduced redundancy</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>Fujitsu RAID Physical Drives SMART</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>OK</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Failure predicted</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>N/A</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>SMART monitoring disabled</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+        <value_map>
+            <name>Fujitsu RAID Physical Drives Status</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Unknow</newvalue>
+                </mapping>
+                <mapping>
+                    <value>2</value>
+                    <newvalue>Is not a haardk disk</newvalue>
+                </mapping>
+                <mapping>
+                    <value>3</value>
+                    <newvalue>Online</newvalue>
+                </mapping>
+                <mapping>
+                    <value>4</value>
+                    <newvalue>Can be used for new configuration</newvalue>
+                </mapping>
+                <mapping>
+                    <value>5</value>
+                    <newvalue>Is available but no longer working</newvalue>
+                </mapping>
+                <mapping>
+                    <value>6</value>
+                    <newvalue>Rebuilding</newvalue>
+                </mapping>
+                <mapping>
+                    <value>7</value>
+                    <newvalue>Is a hot spare device for use in any array</newvalue>
+                </mapping>
+                <mapping>
+                    <value>8</value>
+                    <newvalue>Is a hot spare device for use in a dedicated array</newvalue>
+                </mapping>
+                <mapping>
+                    <value>9</value>
+                    <newvalue>Is set to non-working state</newvalue>
+                </mapping>
+                <mapping>
+                    <value>10</value>
+                    <newvalue>Is not configured but a failure has occured</newvalue>
+                </mapping>
+                <mapping>
+                    <value>11</value>
+                    <newvalue>Is not available or not responding</newvalue>
+                </mapping>
+                <mapping>
+                    <value>12</value>
+                    <newvalue>Is currently being formatted</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
